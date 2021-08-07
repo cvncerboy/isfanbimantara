@@ -63,23 +63,17 @@ li {
     display : none;
 }
 
-main {
-    width: 80%;
-    margin: auto;
-}
-
 .container-main {
     width: 100%;
-    height: 100vh;
+    padding: 10vh 0;
     background: url(asset/jumbotron.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 3em;
 }
 
 .jumbo {
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +94,7 @@ main {
 
 .container-about {
     width: 100%;
-    height: 50vh;
+    padding: 5vh 0;
     background-color: var(--color-two);
 }
 
@@ -110,7 +104,6 @@ main {
 }
 
 .aboutme {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,13 +112,13 @@ main {
 }
 
 .h3, .service, .working, .contactme {
-    width: 15%;
-    border-bottom: 3px solid var(--color-three);
+    min-width: 30vw;
+    /* border-bottom: 3px solid var(--color-three); */
 }
 
 .container-services {
     width: 100%;
-    height: 60vh;
+    padding: 5vh 0;
     background: url(asset/jumbotron.png);
     background-attachment: fixed;
     background-position: center;
@@ -135,7 +128,6 @@ main {
 
 .services {
     width: 80%;
-    height: 60vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -146,7 +138,8 @@ main {
 
 .service-web {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
@@ -161,18 +154,18 @@ main {
 
 .container-work {
     width: 100%;
-    height: 60vh;
+    padding: 5vh 0;
     background-color: var(--color-two);
 }
 
 .work {
     width: 80%;
-    height: 60vh;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
+}
+
+.work-img {
+    margin: 1em 1em 0 1em;
 }
 
 .working {
@@ -222,7 +215,7 @@ main {
 
 .container-contact {
     width: 100%;
-    height: 80vh;
+    padding: 5vh 0;
     background: url(asset/jumbotron.png);
     background-attachment: fixed;
     background-position: center;
@@ -232,7 +225,6 @@ main {
 
 .contact {
     width: 80%;
-    height: 80vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -245,8 +237,7 @@ main {
 }
 
 .btn {
-    width: 15%;
-    height: 8%;
+    padding: .80em 2em;
     background-color: var(--color-three);
     border: none;
     outline: none;
@@ -254,7 +245,7 @@ main {
 }
 
 .form, textarea {
-    width: 23.8em;
+    width: 24em;
 }
 
 .container-footer {
@@ -271,21 +262,7 @@ footer {
     line-height: 3em;
 }
 
-@media(max-width: 1024px) {
-    .container-work, .work {
-        height: 100vh;
-    }
-
-    .img2 {
-        margin-top: 1em;
-    }
-
-    textarea {
-        width: 23.8em;
-    }
-}
-
-@media(max-width: 768px) {
+@media(max-width: 900px) {
 
     header {
         display: flex;
@@ -320,24 +297,6 @@ footer {
         cursor: pointer;
     }
 
-    .container-main {
-        width: 100%;
-        height: 80vh;
-        margin-top: 3em;
-    }
-
-    .jumbo {
-        height: 80vh;
-    }
-
-    .h3, .contactme {
-        width: 18%;
-    }
-
-    textarea {
-        width: 23.8em;
-    }
-
 }
 
 @media(max-width: 425px) {
@@ -346,11 +305,11 @@ footer {
     }
 
     .jumbo {
-        height: 50vh;
+        max-height: 80vh;
     }
 
     .container-main {
-        height: 50vh;
+        max-height: 80vh;
     }
 
     .profile {
@@ -360,34 +319,6 @@ footer {
 
     .name, .aboutme, .services, .work, .contact {
         font-size: .90em;
-    }
-
-    .h3, .service, .working, .contactme {
-        width: 40%;
-    }
-
-    .container-services, .services {
-        height: 110vh;
-    }
-
-    .service-web {
-        display: block;
-    }
-
-    .webdev {
-        margin-bottom: 1em;
-    }
-
-    .container-work, .work {
-        height: 130vh;
-    }
-
-    .img1 {
-        margin-top: 1em;
-    }
-
-    .btn {
-        width: 30%;
     }
 
     .form {
