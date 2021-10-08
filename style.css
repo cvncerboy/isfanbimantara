@@ -1,3 +1,5 @@
+
+
 :root {
     --color-one: #334257;
     --color-two: #476072;
@@ -208,6 +210,15 @@ li {
     width: 300px;
     height:150px;
     background: url(asset/elena.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    width: 300px;
+    height:150px;
+    background: url(asset/mtarget.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
