@@ -224,6 +224,24 @@ li {
     background-size: cover;
 }
 
+.img4 {
+    width: 300px;
+    height:150px;
+    background: url(asset/apple.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img5 {
+    width: 300px;
+    height:150px;
+    background: url(asset/linkedin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .container-contact {
     width: 100%;
     padding: 5vh 0;
